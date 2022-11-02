@@ -26,4 +26,4 @@ add_action('wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10);
 // END ENQUEUE PARENT ACTION
 
 // New Assets And Styles
-require_once(TEMPLATEPATH . '/woan/function.php');
+require_once(get_stylesheet_directory() . '/woan/function.php');
