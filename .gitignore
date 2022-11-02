@@ -1,0 +1,30 @@
+composer.lock
+.htaccess
+
+# Remove Cache
+autotrader/cache/*
+cache/*
+
+# IDE Files
+/nbproject/
+.idea/*
+.DS_store
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
+
+# More Themes
+Sinatra
+
+
+# More Themes
+twentytwentytwo
+twentytwentythree
+twentytwentyfour
+twentytwentyfive
