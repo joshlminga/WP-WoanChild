@@ -20,8 +20,8 @@ cache/*
 /tests/results/
 
 # More Themes
-Sinatra
-
+sinatra
+conferpress
 
 # More Themes
 twentytwentytwo
