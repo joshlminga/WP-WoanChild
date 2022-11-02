@@ -1,0 +1,15 @@
+// Method colorsCode
+@mixin colorsCode($map: $colors) {
+  @each $name, $colorcode in $map {
+    .vrm-color-#{$name} {
+      color: $colorcode !important;
+    }
+  }
+
+  // Background Color
+  @each $name, $colorcode in $map {
+    .vrm-bg-color-#{$name} {
+      background-color: $colorcode !important;
+    }
+  }
+}

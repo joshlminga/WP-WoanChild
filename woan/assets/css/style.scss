@@ -1,0 +1,48 @@
+// Include Color
+@import "_incl/colors";
+// Include
+@import "_incl/incl";
+// Pre Functions
+@import "_incl/func";
+
+/**
+** Todo:
+** 1: Vormia Includes
+*/
+@include colorsCode();
+
+/**
+** Todo:
+** 2: Layout & Position
+*/
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  .error-message {
+    & {
+      .bi-asterisk,
+      .fa-asterisk {
+        color: color(red);
+        font-size: 10px;
+      }
+    }
+  }
+
+  label.required:after {
+    content: "*";
+    margin-left: 0.2rem;
+    color: color(red);
+  }
+
+  /**
+		Error
+		**/
+  span.error,
+  p.error,
+  span.error > p {
+    font-size: 12px;
+    font-weight: 400;
+    color: color(red);
+    font-style: italic;
+  }
+}
