@@ -46,3 +46,34 @@ body {
     font-style: italic;
   }
 }
+
+/**
+* Todo:: Make Sticky Menu
+*/
+div.chld-menu {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  // Icon
+  div.chld-nav-icon {
+    // position at the bottom
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 1%;
+    // Put it at the bottom
+    i {
+      font-size: 4em;
+      color: color(black);
+    }
+  }
+}
+
+/**
+*Todo::Push main page to right
+*/
+div#body-wrap {
+  div#wrap {
+    margin-left: 5% !important;
+  }
+}
