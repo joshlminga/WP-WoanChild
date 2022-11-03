@@ -27,11 +27,55 @@
     $page_title = leaf_global_title();
     ?>
     <div class="chld-menu">
-        <!-- Add sticky menu -->
+        <div class="chld-side-one">
+            <!-- Add sticky menu -->
+            <div class="chld-logo-top">
+                <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/transparent.png" /></a>
+            </div>
+        </div>
 
-        <!-- font awsomme nav icon -->
-        <div class="chld-nav-icon">
-            <i class="fa-solid fa-bars"></i>
+        <div class="chld-main-menu">
+            <!-- Menu -->
+            <ul class="">
+                <li class=""><a href="https://woan.com/">Home</a></li>
+                <li class="">
+                    <a href="#">About Us
+                        <!-- has child menu -->
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">Our Support
+                        <!-- has child menu -->
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">Our Impact
+                        <!-- has child menu -->
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">Our Work
+                        <!-- has child menu -->
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li class=""><a href="#">Contact</a></li>
+
+                <!-- button for Donate Now  -->
+                <li class="chld-donate">
+                    <a href="#" class="btn skew-btn btn-primary ">Donate Now</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="chld-side-footer">
+            <!-- font awsomme nav icon -->
+            <div class="chld-nav-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </div>
     <div id="body-wrap">

@@ -55,16 +55,51 @@ div.chld-menu {
   top: 0;
   z-index: 999;
 
+  // Side Logo
+  div.chld-side-one {
+    div.chld-logo-top {
+      a {
+        img {
+          height: auto !important;
+          width: 5% !important;
+          position: absolute !important;
+        }
+      }
+    }
+  }
+
+  // Menu
+  div.chld-main-menu {
+    position: absolute !important;
+    ul {
+      list-style: none !important;
+      position: fixed !important;
+      margin-left: 5% !important;
+      padding-left: 0px !important;
+      top: 32vh !important;
+      li {
+        margin-bottom: 2%;
+        a {
+          font-size: 3rem !important;
+        }
+      }
+    }
+  }
+
   // Icon
-  div.chld-nav-icon {
-    // position at the bottom
-    position: absolute;
-    margin-top: 30%;
-    margin-left: 1%;
-    // Put it at the bottom
-    i {
-      font-size: 4em;
-      color: color(black);
+  div.chld-side-footer {
+    div.chld-nav-icon {
+      // position at the bottom
+      position: absolute;
+
+      // margin-top: 30%;
+      top: 90vh;
+      margin-left: 1%;
+      // Put it at the bottom
+      i {
+        font-size: 4em;
+        color: color(black);
+      }
     }
   }
 }
@@ -73,7 +108,19 @@ div.chld-menu {
 *Todo::Push main page to right
 */
 div#body-wrap {
+  // width: 95% !important;
+  width: 70% !important;
+  float: right !important;
   div#wrap {
-    margin-left: 5% !important;
+    //margin-left: 5% !important;
+  }
+
+  // Mainmenu
+  div.main-menu {
+    ul.nav {
+      &.navbar-nav {
+        width: 60% !important;
+      }
+    }
   }
 }
