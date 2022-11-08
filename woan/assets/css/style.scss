@@ -59,7 +59,7 @@ div.chld-menu {
   height: 100vh;
   position: fixed;
   z-index: 90;
-  width: 5%;
+  width: 70px;
 
   // Side Logo
   div.chld-side-one {
@@ -67,7 +67,7 @@ div.chld-menu {
       a {
         img {
           height: auto !important;
-          width: 5% !important;
+          width: 70px !important;
           position: fixed !important;
         }
       }
