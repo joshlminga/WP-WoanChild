@@ -51,6 +51,7 @@ body {
 * Todo:: Make Sticky Menu
 */
 div.chld-menu {
+  border-right: 1px solid color(dark-gray) !important;
   //position: sticky;
   //top: 0;
   //z-index: 999;
@@ -134,6 +135,10 @@ div.chld-menu {
         color: color(black);
         &:hover {
           cursor: pointer !important;
+        }
+
+        &.fa-close {
+          color: color(red);
         }
       }
     }
