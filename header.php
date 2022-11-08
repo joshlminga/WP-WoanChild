@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <div class="chld-main-menu">
+        <div class="chld-main-menu d-none">
             <!-- Menu -->
             <ul class="">
                 <li class=""><a href="https://woan.com/">Home</a></li>

@@ -51,9 +51,14 @@ body {
 * Todo:: Make Sticky Menu
 */
 div.chld-menu {
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  //position: sticky;
+  //top: 0;
+  //z-index: 999;
+  background-color: color(white);
+  height: 100vh;
+  position: fixed;
+  z-index: 90;
+  width: 5%;
 
   // Side Logo
   div.chld-side-one {
@@ -62,7 +67,7 @@ div.chld-menu {
         img {
           height: auto !important;
           width: 5% !important;
-          position: absolute !important;
+          position: fixed !important;
         }
       }
     }
@@ -70,13 +75,41 @@ div.chld-menu {
 
   // Menu
   div.chld-main-menu {
-    position: absolute !important;
+    position: fixed !important;
+    z-index: 20 !important;
+    background-color: color(white) !important;
+    // Make the height be full height
+    height: 100% !important;
+
+    margin-left: 5%;
+    width: 20%;
     ul {
+      li {
+        margin: 0;
+        float: none;
+        padding: 15px 20px 15px 0;
+        width: 290px;
+        word-break: break-all;
+        position: initial;
+        a {
+          // font-family: "Roboto", sans-serif !important;
+          // font-style: normal !important;
+          // font-weight: 600 !important;
+          // font-size: 40px !important;
+          line-height: 32px !important;
+          color: color(black); //#a7217b
+
+          &:hover {
+            color: color(light-blue);
+          }
+        }
+      }
+
       list-style: none !important;
       position: fixed !important;
-      margin-left: 5% !important;
+      margin-left: 2% !important;
       padding-left: 0px !important;
-      top: 32vh !important;
+      top: 25vh !important;
       li {
         margin-bottom: 2%;
         a {
@@ -90,30 +123,46 @@ div.chld-menu {
   div.chld-side-footer {
     div.chld-nav-icon {
       // position at the bottom
-      position: absolute;
-
+      position: relative;
+      z-index: 50;
       // margin-top: 30%;
       top: 90vh;
-      margin-left: 1%;
+      margin-left: 20%;
       // Put it at the bottom
       i {
         font-size: 4em;
         color: color(black);
+        &:hover {
+          cursor: pointer !important;
+        }
       }
     }
   }
+}
+
+.d-none {
+  display: none;
 }
 
 /**
 *Todo::Push main page to right
 */
 div#body-wrap {
-  // width: 95% !important;
-  width: 70% !important;
+  width: 95% !important;
+  // width: 70% !important;
   float: right !important;
   div#wrap {
     //margin-left: 5% !important;
+    // Top Nav
+    header {
+      div.wrap-nav {
+        display: none !important;
+      }
+    }
   }
+  // div {
+  //   z-index: 1 !important;
+  // }
 
   // Mainmenu
   div.main-menu {
