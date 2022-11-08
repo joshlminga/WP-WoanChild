@@ -83,13 +83,13 @@ div.chld-menu {
     height: 100% !important;
 
     margin-left: 5%;
-    width: 20%;
+    width: 280px;
     ul {
       li {
         margin: 0;
         float: none;
-        padding: 15px 20px 15px 0;
-        width: 290px;
+        padding: 10px 20px 10px 0;
+        width: 250px;
         word-break: break-all;
         position: initial;
         a {
@@ -99,7 +99,12 @@ div.chld-menu {
           // font-size: 40px !important;
           line-height: 32px !important;
           color: color(black); //#a7217b
-
+          i {
+            position: absolute;
+            right: 17px;
+            margin-right: 0px;
+            padding-top: 6px;
+          }
           &:hover {
             color: color(light-blue);
           }
@@ -110,11 +115,14 @@ div.chld-menu {
       position: fixed !important;
       margin-left: 2% !important;
       padding-left: 0px !important;
-      top: 25vh !important;
+      top: 20vh !important;
       li {
         margin-bottom: 2%;
         a {
-          font-size: 3rem !important;
+          font-size: 3rem !important;          
+        }
+        a.skew-btn{
+          font-size: 2rem !important;            
         }
       }
     }
@@ -131,7 +139,7 @@ div.chld-menu {
       margin-left: 20%;
       // Put it at the bottom
       i {
-        font-size: 4em;
+        font-size: 3em;
         color: color(black);
         &:hover {
           cursor: pointer !important;
@@ -176,5 +184,14 @@ div#body-wrap {
         width: 60% !important;
       }
     }
+  }
+}
+// top cards
+div.leaf_row{
+  div.vc_custom_1472739040766{
+    padding-left: 60px !important;
+  }
+  div.vc_custom_1667304403594 {
+    padding-left: 60px !important;
   }
 }
