@@ -27,3 +27,11 @@ add_action('wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10);
 
 // New Assets And Styles
 require_once(get_stylesheet_directory() . '/woan/function.php');
+
+
+// Menus
+register_nav_menus(
+    array(
+        'left-sidebar-menu' => 'Left Sidebar Menu Location'
+    )
+);
