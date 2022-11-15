@@ -36,39 +36,14 @@
 
         <div class="chld-main-menu d-none">
             <!-- Menu -->
-            <ul class="">
-                <li class=""><a href="https://woan.com/">Home</a></li>
-                <li class="">
-                    <a href="#">About Us
-                        <!-- has child menu -->
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#">Our Support
-                        <!-- has child menu -->
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#">Our Impact
-                        <!-- has child menu -->
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#">Our Work
-                        <!-- has child menu -->
-                        <i class="fas fa-angle-right"></i>
-                    </a>
-                </li>
-                <li class=""><a href="#">Contact</a></li>
+            <?php 
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'left-sidebar-menu',
+                    )
+                );
 
-                <!-- button for Donate Now  -->
-                <li class="chld-donate">
-                    <a href="#" class="btn skew-btn btn-primary ">Donate Now</a>
-                </li>
-            </ul>
+            ?>
         </div>
 
         <div class="chld-side-footer">
