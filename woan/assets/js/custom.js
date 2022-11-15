@@ -21,3 +21,47 @@ if(chldHm){
         }
     });
 }
+
+// Hide Other Li
+const hideOther = (li) => {
+    // Loop
+    li.forEach((item) => {
+        // if li has class active then
+        if(item.classList.contains('is-active')){
+            // remove class active
+            item.classList.remove('is-active');
+
+            // find all ul inside item and remove class show-children
+            item.querySelectorAll('ul').forEach((ul) => {
+                ul.classList.remove('show-children');
+            });
+        }
+    });
+}
+// Ul
+const mainNav = document.querySelector("ul.chld-ul-nav");
+if(mainNav){
+
+    let li = mainNav.querySelectorAll('li.has-children');
+
+    li.forEach(isLi =>{
+        isLi.addEventListener('click', () => {
+            // Get Parent of li
+            let parent = isLi.parentElement;
+            // if parent is ul and has class has-children
+            (!parent.classList.contains('has-children')) ? hideOther(li) : '';
+
+            // if li has class active then remove it
+            if(isLi.classList.contains('is-active')){
+                hideOther(li);
+            } else{
+                // Active Class
+                isLi.classList.toggle('is-active');
+                // Show Ul
+                let ulInner = isLi.querySelector('ul.has-children');
+                ulInner.classList.toggle('show-children');
+
+            }
+        });
+    });
+}

@@ -30,20 +30,99 @@
         <div class="chld-side-one">
             <!-- Add sticky menu -->
             <div class="chld-logo-top">
-                <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/transparent.png" /></a>
+                <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/logo_bare.png" /></a>
             </div>
+
+            <div class="chld-logo-side">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/logo_side.png" />
+            </div>
+
         </div>
 
         <div class="chld-main-menu d-none">
-            <!-- Menu -->
-            <?php 
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'left-sidebar-menu',
-                    )
-                );
+            <!-- Add sticky menu -->
+            <div class="chld-logo-main">
+                <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/transparent.png" /></a>
+            </div>
 
+            <!-- Menu -->
+            <?php //wp_nav_menu(array('theme_location' => 'left-sidebar-menu',)); 
             ?>
+            <ul class="chld-ul-nav" style="">
+                <li class=""><a href="https://woan.com/">Home</a></li>
+                <li class="has-children">
+                    <a href="#">About Us
+                        <!-- has child menu -->
+                    </a>
+                    <!-- Child Menu -->
+                    <ul class="has-children">
+                        <li>
+                            <a href=""> Level 1</a>
+                        </li>
+                        <li>
+                            <a href=""> Level 1</a>
+                        </li>
+                        <li class="has-children">
+                            <a href="#"> Level 1</a>
+                            <!-- has child menu -->
+                            <!-- <i class="fas fa-angle-right"></i> -->
+                            <ul class="has-children">
+                                <li><a href="">Level 2</a></li>
+                                <li><a href="">Level 2</a></li>
+                                <li><a href="">Level 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""> Level 1</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#">Our Support </a>
+                </li>
+                <li class="has-children">
+                    <a href="#">Our Impact
+                        <!-- has child menu -->
+                    </a>
+                    <ul class="has-children">
+                        <li>
+                            <a href=""> Level 11</a>
+                        </li>
+                        <li>
+                            <a href=""> Level 11</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="#">Our Work
+                        <!-- has child menu -->
+                        <!-- <i class="fas fa-angle-right"></i> -->
+                    </a>
+                    <!-- Child Menu -->
+                    <ul class="has-children">
+                        <li>
+                            <a href=""> Level 1</a>
+                        </li>
+                        <li>
+                            <a href=""> Level 1</a>
+                        </li>
+                        <li class="has-children">
+                            <a href="#"> Level 1</a>
+                            <!-- has child menu -->
+                            <!-- <i class="fas fa-angle-right"></i> -->
+                            <ul class="has-children">
+                                <li><a href="">Level 2</a></li>
+                                <li><a href="">Level 2</a></li>
+                                <li><a href="">Level 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""> Level 1</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=""><a href="#">Contact</a></li>
+            </ul>
         </div>
 
         <div class="chld-side-footer">
