@@ -45,7 +45,9 @@
 
             ?>
         </div>
-
+        <div>
+            <img class="attachment-full size-full" alt="Vertical Image" style="top: 10%;position: absolute;width: 117px;" src="http://localhost/side2.png">
+        </div>
         <div class="chld-side-footer">
             <!-- font awsomme nav icon -->
             <div class="chld-nav-icon">
