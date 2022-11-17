@@ -30,23 +30,137 @@
         <div class="chld-side-one">
             <!-- Add sticky menu -->
             <div class="chld-logo-top">
-                <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/transparent.png" /></a>
+                <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/logo_bare.png" /></a>
             </div>
+
+            <div class="chld-logo-side">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/logo_side.png" />
+            </div>
+
         </div>
 
         <div class="chld-main-menu d-none">
-            <!-- Menu -->
-            <?php 
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'left-sidebar-menu',
-                    )
-                );
+            <!-- Add sticky menu -->
+            <div class="chld-logo-main">
+                <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/transparent.png" /></a>
+            </div>
 
+            <!-- Menu -->
+            <?php //wp_nav_menu(array('theme_location' => 'left-sidebar-menu',)); 
             ?>
-        </div>
-        <div>
-            <img class="attachment-full size-full" alt="Vertical Image" style="top: 10%;position: absolute;width: 117px;" src="http://localhost/side2.png">
+            <ul class="chld-ul-nav">
+                <li>
+                    <a href="https://2022.midori.ke/woan/" >Home </a>
+                </li>
+                <li class="has-children">
+                    <!--<a href="https://2022.midori.ke/woan/about-us/">About Us </a>-->
+                    <a href="#">About Us </a>
+                    <ul class="has-children">
+                        <li><a href="https://2022.midori.ke/woan/our-core-values/">Our Core Values </a></li>
+                        <li><a href="https://2022.midori.ke/woan/financial/">Financial </a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <!--<a href="https://2022.midori.ke/woan/our-support/">Our Support </a>-->
+                    <a href="#">Our Support </a>
+                    <ul class="has-children">
+                        <li><a href="https://2022.midori.ke/woan/shortcodes/member/" >Our Team </a></li>
+                        <li><a href="https://2022.midori.ke/woan/family-members/">Family Members </a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="#">Our Impact </a>
+                    <ul class="has-children">
+                        <li><a href="https://2022.midori.ke/woan/our-events-2022/">Our Events 2022 </a></li>
+                        <li><a href="https://2022.midori.ke/woan/our-events-2021/" >Our Events 2021 </a></li>
+                        <li><a href="https://2022.midori.ke/woan/our-newsletters/" >Our Newsletters </a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="#" >Our Work </a>
+                    <ul class="has-children">
+                        <li><a href="#" >Our Projects </a></li>
+                        <li><a href="#" >Our Programs </a></li>
+                    </ul>
+                </li>
+                <li><a href="https://2022.midori.ke/woan/contact-us/" class="menu-link  main-menu-link">Contact </a></li>
+            </ul>
+            
+            <!--<ul class="chld-ul-nav" style="">-->
+            <!--    <li class=""><a href="https://woan.com/">Home</a></li>-->
+            <!--    <li class="has-children">-->
+            <!--        <a href="#">About Us-->
+                        <!-- has child menu -->
+            <!--        </a>-->
+                    <!-- Child Menu -->
+            <!--        <ul class="has-children">-->
+            <!--            <li>-->
+            <!--                <a href=""> Level 1</a>-->
+            <!--            </li>-->
+            <!--            <li>-->
+            <!--                <a href=""> Level 1</a>-->
+            <!--            </li>-->
+            <!--            <li class="has-children">-->
+            <!--                <a href="#"> Level 1</a>-->
+                            <!-- has child menu -->
+                            <!-- <i class="fas fa-angle-right"></i> -->
+            <!--                <ul class="has-children">-->
+            <!--                    <li><a href="">Level 2</a></li>-->
+            <!--                    <li><a href="">Level 2</a></li>-->
+            <!--                    <li><a href="">Level 2</a></li>-->
+            <!--                </ul>-->
+            <!--            </li>-->
+            <!--            <li>-->
+            <!--                <a href=""> Level 1</a>-->
+            <!--            </li>-->
+            <!--        </ul>-->
+            <!--    </li>-->
+            <!--    <li class="">-->
+            <!--        <a href="#">Our Support </a>-->
+            <!--    </li>-->
+            <!--    <li class="has-children">-->
+            <!--        <a href="#">Our Impact-->
+                        <!-- has child menu -->
+            <!--        </a>-->
+            <!--        <ul class="has-children">-->
+            <!--            <li>-->
+            <!--                <a href=""> Level 11</a>-->
+            <!--            </li>-->
+            <!--            <li>-->
+            <!--                <a href=""> Level 11</a>-->
+            <!--            </li>-->
+            <!--        </ul>-->
+            <!--    </li>-->
+            <!--    <li class="has-children">-->
+            <!--        <a href="#">Our Work-->
+                        <!-- has child menu -->
+                        <!-- <i class="fas fa-angle-right"></i> -->
+            <!--        </a>-->
+                    <!-- Child Menu -->
+            <!--        <ul class="has-children">-->
+            <!--            <li>-->
+            <!--                <a href=""> Level 1</a>-->
+            <!--            </li>-->
+            <!--            <li>-->
+            <!--                <a href=""> Level 1</a>-->
+            <!--            </li>-->
+            <!--            <li class="has-children">-->
+            <!--                <a href="#"> Level 1</a>-->
+                            <!-- has child menu -->
+                            <!-- <i class="fas fa-angle-right"></i> -->
+            <!--                <ul class="has-children">-->
+            <!--                    <li><a href="">Level 2</a></li>-->
+            <!--                    <li><a href="">Level 2</a></li>-->
+            <!--                    <li><a href="">Level 2</a></li>-->
+            <!--                </ul>-->
+            <!--            </li>-->
+            <!--            <li>-->
+            <!--                <a href=""> Level 1</a>-->
+            <!--            </li>-->
+            <!--        </ul>-->
+            <!--    </li>-->
+            <!--    <li class=""><a href="#">Contact</a></li>-->
+            <!--</ul>-->
         </div>
         <div class="chld-side-footer">
             <!-- font awsomme nav icon -->
