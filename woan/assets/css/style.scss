@@ -72,10 +72,26 @@ div.chld-menu {
         }
       }
     }
+
+    div.chld-logo-side {
+      img {
+        position: fixed;
+        top: 15%;
+        right: 20%;
+      }
+    }
   }
 
   // Menu
   div.chld-main-menu {
+    // Logo
+    div.chld-logo-main {
+      width: 100%;
+      margin-top: -15%;
+      // padding-left: 15%;
+      // padding-right: 15%;
+    }
+    // Menu -Nav
     position: fixed !important;
     z-index: 20 !important;
     background-color: color(white) !important;
@@ -85,6 +101,20 @@ div.chld-menu {
     margin-left: 70px;
     width: 280px;
     ul {
+      list-style: none !important;
+      margin-left: 2% !important;
+    }
+
+    ul.chld-ul-nav {
+      position: fixed !important;
+      margin-left: 2% !important;
+      padding-left: 0px !important;
+      top: 33vh !important;
+      overflow-y: scroll;
+      height: 67%;
+      overflow-x: hidden;
+      scrollbar-width: none;
+
       li {
         margin: 0;
         float: none;
@@ -111,22 +141,86 @@ div.chld-menu {
         }
       }
 
-      list-style: none !important;
-      position: fixed !important;
-      margin-left: 2% !important;
-      padding-left: 0px !important;
-      top: 20vh !important;
       li {
-        margin-bottom: 2%;
+        margin-bottom: 1%;
         a {
-          font-size: 3rem !important;          
+          font-size: 2rem !important;
         }
-        a.skew-btn{
-          font-size: 2rem !important;            
+        a.skew-btn {
+          font-size: 2rem !important;
+        }
+      }
+
+      li.has-children {
+          &::after {
+            content: "\f105"; // f107
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 17px;
+            margin-right: 0px;
+            padding-top: 0px;
+            font-size: 2rem;
+          }
+          
+
+        // UL
+        ul.has-children {
+          display: none;
+          position: inherit;
+          width: 100%;
+          z-index: 1;
+          li {
+            a {
+              color: color(black);
+              &:hover {
+                color: color(light-blue);
+              }
+            }
+          }
+        }
+      }
+
+      // Active
+      .show-children {
+        display: block !important;
+      }
+      .is-active {
+        a {
+          color: color(light-blue);
+        }
+        a:active{
+
+        }
+        
+        
+          &::after {
+            content: "" !important;
+            // content: "\f107" !important;
+            // font-family: "Font Awesome 5 Free";
+            // font-weight: 900;
+            // position: absolute;
+            // right: 17px;
+            // margin-right: 0px;
+            // padding-top: 0px;
+            // font-size: 2rem;
+          }
+      }
+      .sidebar-socials{
+        text-align: center;
+        a.fab{
+          padding: 10px;
         }
       }
     }
   }
+    div.side-image > img{
+      margin: 0;
+      position: absolute;
+      top: 45%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
 
   // Icon
   div.chld-side-footer {
@@ -161,7 +255,7 @@ div.chld-menu {
 *Todo::Push main page to right
 */
 div#body-wrap {
-  width: 95% !important;
+  width: 96% !important;
   // width: 70% !important;
   float: right !important;
   div#wrap {
@@ -187,16 +281,16 @@ div#body-wrap {
   }
 }
 // top cards
-div.leaf_row{
-  div.vc_custom_1472739040766{
+div.leaf_row {
+  div.vc_custom_1472739040766 {
     padding-left: 60px !important;
   }
   div.vc_custom_1667304403594 {
     padding-left: 60px !important;
   }
 }
-rs-fullwidth-wrap#rev_slider_1_1_forcefullwidth{
-  rs-module-wrap#rev_slider_1_1_wrapper{
+rs-fullwidth-wrap#rev_slider_1_1_forcefullwidth {
+  rs-module-wrap#rev_slider_1_1_wrapper {
     padding-left: 60px !important;
   }
 }
