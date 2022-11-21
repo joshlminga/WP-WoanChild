@@ -35,3 +35,12 @@ register_nav_menus(
         'left-sidebar-menu' => 'Left Sidebar Menu Location'
     )
 );
+
+class My_Walker_Nav_Menu extends Walker_Nav_Menu {
+    
+    function start_lvl(&$output, $depth) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "\n$indent<ul class=\"menu-item-has-children\">\n";
+    }
+
+}

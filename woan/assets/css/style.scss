@@ -151,7 +151,7 @@ div.chld-menu {
         }
       }
 
-      li.has-children {
+      li.menu-item-has-children {
           &::after {
             content: "\f105"; // f107
             font-family: "Font Awesome 5 Free";
@@ -165,7 +165,7 @@ div.chld-menu {
           
 
         // UL
-        ul.has-children {
+        ul.menu-item-has-children {
           display: none;
           position: inherit;
           width: 100%;
@@ -191,20 +191,33 @@ div.chld-menu {
         }
         a:active{
 
+        }     
+        
+        &::after {
+          content: "" !important;
+          // content: "\f107" !important;
+          // right: 15px !important;
+          // position: absolute;
+          // padding-top: 5px;
+          // font-family: "Font Awesome 5 Free";
+          // font-weight: 900;
+          // position: absolute;
+          // right: 17px;
+          // margin-right: 0px;
+          // padding-top: 0px;
+          // font-size: 2rem;
         }
-        
-        
-          &::after {
-            content: "" !important;
-            // content: "\f107" !important;
-            // font-family: "Font Awesome 5 Free";
-            // font-weight: 900;
-            // position: absolute;
-            // right: 17px;
-            // margin-right: 0px;
-            // padding-top: 0px;
-            // font-size: 2rem;
-          }
+        &::before {
+          content: "\f107" !important;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          right: 15px !important;
+          margin-right: 0;          
+          font-size: 2rem;
+          padding-top: 5px;
+        }  
+
       }
       .sidebar-socials{
         text-align: center;
@@ -214,13 +227,13 @@ div.chld-menu {
       }
     }
   }
-    div.side-image > img{
-      margin: 0;
-      position: absolute;
-      top: 45%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
+  div.side-image > img{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 
   // Icon
   div.chld-side-footer {
