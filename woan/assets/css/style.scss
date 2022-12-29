@@ -152,17 +152,16 @@ div.chld-menu {
       }
 
       li.menu-item-has-children {
-          &::after {
-            content: "\f105"; // f107
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            position: absolute;
-            right: 17px;
-            margin-right: 0px;
-            padding-top: 0px;
-            font-size: 2rem;
-          }
-          
+        &::after {
+          content: "\f105"; // f107
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          right: 17px;
+          margin-right: 0px;
+          padding-top: 0px;
+          font-size: 2rem;
+        }
 
         // UL
         ul.menu-item-has-children {
@@ -189,10 +188,9 @@ div.chld-menu {
         a {
           color: color(light-blue);
         }
-        a:active{
+        a:active {
+        }
 
-        }     
-        
         &::after {
           content: "" !important;
           // content: "\f107" !important;
@@ -213,13 +211,12 @@ div.chld-menu {
           font-weight: 900;
           position: absolute;
           right: 15px !important;
-          margin-right: 0;          
+          margin-right: 0;
           font-size: 2rem;
           padding-top: 5px;
-        }  
-
+        }
       }
-      .sidebar-socials{
+      .sidebar-socials {
         text-align: center;
         margin-left: -2%;
         a.fab{
@@ -228,22 +225,31 @@ div.chld-menu {
       }
     }
   }
-  div.side-image > img{
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  div.side-image {
+    a {
+      text-decoration: none !important;
+    }
+    img {
+      margin: 0;
+      position: absolute;
+      //top: 45%;
+      top: 52%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
   }
 
   // Icon
   div.chld-side-footer {
+    height: 8.5vh;
+    border-bottom: 1px solid;
+
     div.chld-nav-icon {
       // position at the bottom
       position: relative;
       z-index: 50;
       // margin-top: 30%;
-      top: 90vh;
+      top: 2vh;
       margin-left: 20%;
       // Put it at the bottom
       i {
@@ -320,5 +326,18 @@ div.leaf_row.dark-div  {
 rs-fullwidth-wrap#rev_slider_1_1_forcefullwidth {
   rs-module-wrap#rev_slider_1_1_wrapper {
     padding-left: 60px !important;
+  }
+}
+
+// Apply To Any Table
+table {
+  tbody > tr {
+    td {
+      a {
+      }
+    }
+    &:hover td {
+      background-color: color(client-main) !important;
+    }
   }
 }
