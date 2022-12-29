@@ -3,7 +3,7 @@ const menu = document.querySelector('.chld-main-menu');
 // DIV
 const chldHm = document.querySelector('.chld-side-footer');
 if(chldHm){
-    // DIV
+     // DIV
     let hmb_menu = chldHm.querySelector('div.chld-nav-icon > i'); 
     hmb_menu.addEventListener('click', function(){
         
@@ -69,3 +69,19 @@ if(mainNav){
         });
     });
 }
+
+// When User Click Outside Menu Div Class
+document.addEventListener('click', (cl) => {
+  // Check if the clicked element is inside the div
+  if (cl.target.closest('.chld-menu') == null) {
+    // The clicked element is outside the div, so do something
+    let hmb_menu = chldHm.querySelector('div.chld-nav-icon > i'); 
+    if(!menu.classList.contains('d-none')){
+        menu.classList.add('d-none');
+        // icon
+        hmb_menu.classList.remove('fa-close');
+        hmb_menu.classList.add('fa-bars');
+    }
+  }
+});
+

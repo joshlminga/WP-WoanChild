@@ -28,14 +28,14 @@
     ?>
     <div class="chld-menu">
         <!--<div class="chld-side-one">-->
-            <!-- Add sticky menu -->
-            <!--<div class="chld-logo-top">-->
-            <!--    <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/logo_bare.png" /></a>-->
-            <!--</div>-->
+        <!-- Add sticky menu -->
+        <!--<div class="chld-logo-top">-->
+        <!--    <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/logo_bare.png" /></a>-->
+        <!--</div>-->
 
-            <!--<div class="chld-logo-side">-->
-            <!--    <img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/logo_side.png" />-->
-            <!--</div>-->
+        <!--<div class="chld-logo-side">-->
+        <!--    <img src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/logo_side.png" />-->
+        <!--</div>-->
 
         <!--</div>-->
 
@@ -46,9 +46,9 @@
             </div>
 
             <!-- Menu -->
-            <?php wp_nav_menu(array('theme_location' => 'left-sidebar-menu','menu_class' => 'chld-ul-nav','walker' => new My_Walker_Nav_Menu() )); 
+            <?php wp_nav_menu(array('theme_location' => 'left-sidebar-menu', 'menu_class' => 'chld-ul-nav', 'walker' => new My_Walker_Nav_Menu()));
             ?>
-            
+
         </div>
         <div class="chld-side-footer">
             <!-- font awsomme nav icon -->
@@ -57,7 +57,9 @@
             </div>
         </div>
         <div class="side-image" style="height: 80%;">
-            <img class="attachment-full size-full" alt="Vertical Image" src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/logo_side.png">
+            <a href="<?php echo home_url(); ?>">
+                <img class="attachment-full size-full" alt="Vertical Image" src="<?php echo get_stylesheet_directory_uri(); ?>/woan/assets/img/logo_side.png">
+            </a>
         </div>
     </div>
     <div id="body-wrap">
