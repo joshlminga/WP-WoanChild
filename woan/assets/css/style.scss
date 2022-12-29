@@ -221,6 +221,7 @@ div.chld-menu {
       }
       .sidebar-socials{
         text-align: center;
+        margin-left: -2%;
         a.fab{
           padding: 10px;
         }
@@ -294,12 +295,26 @@ div#body-wrap {
   }
 }
 // top cards
-div.leaf_row {
-  div.vc_custom_1472739040766 {
-    padding-left: 60px !important;
+// div.leaf_row {
+//   div.vc_custom_1472739040766 {
+//     padding-left: 60px !important;
+//   }
+//   div.vc_custom_1519818551953 {
+//     padding-left: 60px !important;
+//   }
+// }
+.vc_row {
+  padding-left: 65px !important;
+}
+
+div.leaf_row.dark-div  {
+  div.vc_row {
+    padding-left: 80px !important;
   }
-  div.vc_custom_1667304403594 {
-    padding-left: 60px !important;
+}
+@media screen and (max-width: 1171px){
+  .footer-inner {
+    padding-left: 50px !important;
   }
 }
 rs-fullwidth-wrap#rev_slider_1_1_forcefullwidth {
