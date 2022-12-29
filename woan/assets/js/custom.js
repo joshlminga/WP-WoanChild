@@ -42,14 +42,15 @@ const hideOther = (li) => {
 const mainNav = document.querySelector("ul.chld-ul-nav");
 if(mainNav){
 
-    let li = mainNav.querySelectorAll('li.has-children');
+    let li = mainNav.querySelectorAll('li.menu-item-has-children');
 
     li.forEach(isLi =>{
         isLi.addEventListener('click', () => {
+            isLi.classList.remove('is-active');
             // Get Parent of li
             let parent = isLi.parentElement;
-            // if parent is ul and has class has-children
-            (!parent.classList.contains('has-children')) ? hideOther(li) : '';
+            // if parent is ul and has class menu-item-has-children
+            (!parent.classList.contains('menu-item-has-children')) ? hideOther(li) : '';
 
             // if li has class active then remove it
             if(isLi.classList.contains('is-active')){
@@ -58,8 +59,11 @@ if(mainNav){
                 // Active Class
                 isLi.classList.toggle('is-active');
                 // Show Ul
-                let ulInner = isLi.querySelector('ul.has-children');
+                let ulInner = isLi.querySelector('ul.menu-item-has-children');
                 ulInner.classList.toggle('show-children');
+                if(!ulInner.classList.contains('show-children')){
+                    isLi.classList.remove('is-active');
+                } 
 
             }
         });
